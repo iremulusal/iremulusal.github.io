@@ -788,6 +788,33 @@
         .hero h1 { animation-delay: 0.3s; }
         .hero-description { animation-delay: 0.4s; }
         .hero-buttons { animation-delay: 0.5s; }
+
+                /* Link tıklanabilir olsun */
+        .project-link{
+          position: relative;
+          z-index: 5;
+          display: inline-flex;
+          pointer-events: auto;
+        }
+        
+        /* Kartın üstünde overlay varsa linkin üstüne çıkabilsin */
+        .project-content{
+          position: relative;
+          z-index: 4;
+        }
+        
+        /* Resim veya image-wrapper tıklamayı yutmasın */
+        .project-image-real,
+        .project-image-real img{
+          pointer-events: none;
+        }
+        
+        /* Eğer kartta before/after overlay kullanıyorsan, onları da tıklanmaz yap */
+        .project-card::before,
+        .project-card::after{
+          pointer-events: none;
+        }
+
     </style>
 </head>
 <body>
