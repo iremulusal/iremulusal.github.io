@@ -492,32 +492,19 @@
         }
 
         .company-link {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
             color: var(--text-primary);
             text-decoration: none;
             transition: color 0.2s ease;
+            font-weight: 500;
         }
 
         .company-link:hover {
             color: var(--accent);
         }
 
-        .company-logo {
-            height: 20px;
-            width: auto;
-            object-fit: contain;
-            filter: grayscale(100%) brightness(1.5);
-            transition: filter 0.2s ease;
-        }
-
-        .company-link:hover .company-logo {
-            filter: grayscale(0%) brightness(1);
-        }
-
         .company-location {
             color: var(--text-muted);
+            font-weight: 400;
         }
 
         .timeline-item ul {
@@ -600,6 +587,16 @@
 
         .project-card:hover .project-image-real img {
             transform: scale(1.05);
+        }
+
+        .petconnect-img img {
+            object-position: center 30%;
+        }
+
+        .bodycomp-img img {
+            object-fit: contain;
+            background: #1a1a2e;
+            padding: 0.5rem;
         }
 
         .project-content {
@@ -900,10 +897,7 @@
                     <div class="timeline-date">Jan – Feb 2025 & Aug – Oct 2025</div>
                     <h3>Data Analysis Intern</h3>
                     <h4>
-                        <a href="https://www.eatron.com" target="_blank" class="company-link">
-                            <img src="https://www.eatron.com/wp-content/uploads/2023/03/Mask-Group-1-1.png" alt="Eatron" class="company-logo">
-                            Eatron Technologies
-                        </a>
+                        <a href="https://www.eatron.com" target="_blank" class="company-link">Eatron Technologies</a>
                         <span class="company-location">— Istanbul</span>
                     </h4>
                     <ul>
@@ -917,10 +911,7 @@
                     <div class="timeline-date">Feb – Jun 2025 & Sep 2025 – Present</div>
                     <h3>Learning Assistant</h3>
                     <h4>
-                        <a href="https://www.sabanciuniv.edu" target="_blank" class="company-link">
-                            <img src="https://upload.wikimedia.org/wikipedia/tr/thumb/7/71/Sabanc%C4%B1_%C3%9Cniversitesi_logo.png/1200px-Sabanc%C4%B1_%C3%9Cniversitesi_logo.png" alt="Sabancı University" class="company-logo">
-                            Sabancı University
-                        </a>
+                        <a href="https://www.sabanciuniv.edu" target="_blank" class="company-link">Sabancı University</a>
                         <span class="company-location">— Advanced Programming for Data Science</span>
                     </h4>
                     <ul>
@@ -932,10 +923,7 @@
                     <div class="timeline-date">Jan – Feb 2024</div>
                     <h3>Intern</h3>
                     <h4>
-                        <a href="https://bilgem.tubitak.gov.tr" target="_blank" class="company-link">
-                            <img src="https://bilgem.tubitak.gov.tr/sites/default/files/bilgem_logo.png" alt="TÜBİTAK BİLGEM" class="company-logo">
-                            TÜBİTAK BİLGEM
-                        </a>
+                        <a href="https://bilgem.tubitak.gov.tr" target="_blank" class="company-link">TÜBİTAK BİLGEM</a>
                         <span class="company-location">— Kocaeli</span>
                     </h4>
                     <ul>
@@ -974,7 +962,7 @@
                 </div>
 
                 <div class="project-card">
-                    <div class="project-image-real">
+                    <div class="project-image-real petconnect-img">
                         <img src="petconnect.png" alt="PetConnect">
                     </div>
                     <div class="project-content">
@@ -993,7 +981,7 @@
                 </div>
 
                 <div class="project-card">
-                    <div class="project-image-real">
+                    <div class="project-image-real bodycomp-img">
                         <img src="bodycomp.png" alt="Body Composition ML Analysis">
                     </div>
                     <div class="project-content">
@@ -1050,7 +1038,7 @@
 
     <footer>
         <div class="container">
-            <span>© 2025 İrem Ulusal</span>
+            <span>© 2026 İrem Ulusal</span>
             <span>Built with curiosity ✦</span>
         </div>
     </footer>
