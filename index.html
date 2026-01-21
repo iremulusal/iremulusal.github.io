@@ -603,6 +603,18 @@
             transform: scale(1.35);
         }
 
+        .blastgame-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transform: scale(1.0);
+            transition: transform 0.4s ease;
+        }
+        
+        .project-card:hover .blastgame-img img {
+            transform: scale(1.05);
+        }
+
         .project-content {
             padding: 1.5rem;
         }
@@ -849,7 +861,7 @@
                     </p>
                     <div class="hero-buttons">
                         <a href="#projects" class="btn btn-primary">View Projects →</a>
-                        <a href="mailto:irem.ulusal@sabanciuniv.edu" class="btn btn-secondary">Get in Touch</a>
+                        <a href="/cdn-cgi/l/email-protection#adc4dfc8c083d8c1d8deccc1eddecccfccc3cec4d8c3c4db83c8c9d8" class="btn btn-secondary">Get in Touch</a>
                     </div>
                 </div>
                 <div class="hero-image">
@@ -895,6 +907,8 @@
                         <span class="skill-tag">Pandas</span>
                         <span class="skill-tag">Matplotlib</span>
                         <span class="skill-tag">C++</span>
+                        <span class="skill-tag">C#</span>
+                        <span class="skill-tag">Unity</span>
                         <span class="skill-tag">SQL</span>
                         <span class="skill-tag">Dart/Flutter</span>
                         <span class="skill-tag">Verilog HDL</span>
@@ -1020,6 +1034,23 @@
                            impact on body composition using regression modeling.</p>
                     </div>
                 </div>
+
+                <div class="project-card">
+                    <div class="project-image-real blastgame-img">
+                        <img src="blastgame.png" alt="Blast Game">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span>Unity</span>
+                            <span>C#</span>
+                            <span>Game Dev</span>
+                        </div>
+                        <h3>Blast Game</h3>
+                        <p>Performance-optimized collapse/blast puzzle game with power-up combos, 
+                           smart shuffle algorithm, and zero-allocation gameplay architecture.</p>
+                        <a href="https://github.com/iremulusal/blast-game" target="_blank" class="project-link">View on GitHub →</a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -1034,7 +1065,7 @@
                 <p>I'm actively seeking summer internship opportunities in computer engineering 
                    and data science. Feel free to reach out — I'd love to connect.</p>
                 <div class="contact-links">
-                    <a href="mailto:irem.ulusal@sabanciuniv.edu" class="contact-link">
+                    <a href="/cdn-cgi/l/email-protection#e8819a8d85c69d849d9b8984a89b898a89868b819d86819ec68d8c9d" class="contact-link">
                         <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" 
                                   d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
@@ -1065,13 +1096,6 @@
         </div>
     </footer>
 
-    <script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
         // Preloader
-        window.addEventListener('load', function() {
-            setTimeout(function() {
-                document.getElementById('preloader').classList.add('hidden');
-            }, 1500);
-        });
-    </script>
-</body>
-</html>
+        window.addEvent
