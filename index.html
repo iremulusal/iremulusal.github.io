@@ -1096,6 +1096,22 @@
         </div>
     </footer>
 
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+    <script>
         // Preloader
-        window.addEvent
+        window.addEventListener('load', function() {
+            const preloader = document.querySelector('.preloader');
+            if (preloader) {
+                preloader.classList.add('hidden');
+            }
+        });
+
+        // Fallback - hide preloader after 2 seconds anyway
+        setTimeout(function() {
+            const preloader = document.querySelector('.preloader');
+            if (preloader) {
+                preloader.classList.add('hidden');
+            }
+        }, 2000);
+    </script>
+</body>
+</html>
